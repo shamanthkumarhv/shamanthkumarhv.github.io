@@ -225,7 +225,7 @@ nav {
   }
   
   #toggleTheme:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #4CAF50; /* Darker green on hover */
   }
   /* Dark mode */
 body.dark-mode {
@@ -297,9 +297,20 @@ body.dark-mode {
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  #chatbot-container iframe {
+  /* #chatbot-container iframe {
     width: 100%;
     height: 500px; /* Adjust height as necessary */
-    border: none;
-  }
+  
+    #chatbot-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    
   

@@ -160,18 +160,203 @@
           });
         });
       </script>
-      <section id="chatbot">
+      <!-- <section id="chatbot">
         <h2>Chat with Me!</h2>
         <div id="chatbot-container">
-          <!-- Embed Botpress chatbot with iframe -->
+          Embed Botpress chatbot with iframe 
           <iframe
             src="https://cdn.botpress.cloud/webchat/v2/shareable.html?botId=f6574c9b-7b74-40aa-bd79-b078956ea2fb"
-            width="400"
+            width="100%"
             height="500"
             style="border: none;"
             title="Botpress Chatbot">
           </iframe>
         </div>
-      </section>
+      </section> -->
+      <!-- <style>
+        #chatbot-toggle {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #4CAF50;
+          color: white;
+          padding: 15px;
+          border-radius: 50%;
+          border: none;
+          cursor: pointer;
+          font-size: 18px;
+          transition: transform 0.3s ease;
+        }
+    
+        #chatbot-toggle:hover {
+          transform: scale(1.1);
+        }
+    
+        #chatbot-container {
+          position: fixed;
+          bottom: 80px;
+          right: 20px;
+          width: 400px;
+          height: 600px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          display: none;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+          transition: all 0.3s ease;
+          z-index: 1000;
+        }
+    
+        #chatbot-container iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+    
+        .chatbot-open {
+          display: block !important;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <!-- <header>
+        <h1>Shamanth Kumar HV</h1>
+      </header> -->
+    
+      <!-- Toggle button for the chatbot --
+      <button id="chatbot-toggle">💬 Chat</button>
+    
+      -- Chatbot iframe container -->
+      <div id="chatbot-container">
+        <iframe
+          src="https://cdn.botpress.cloud/webchat/v2/shareable.html?botId=f6574c9b-7b74-40aa-bd79-b078956ea2fb"
+          title="Botpress Chatbot">
+        </iframe>
+      </div>
+    
+      <!-- JavaScript for chatbot toggle --
+      <script>
+        const chatbotToggle = document.getElementById('chatbot-toggle');
+        const chatbotContainer = document.getElementById('chatbot-container');
+    
+        chatbotToggle.addEventListener('click', function() {
+          if (chatbotContainer.classList.contains('chatbot-open')) {
+            chatbotContainer.classList.remove('chatbot-open');
+          } else {
+            chatbotContainer.classList.add('chatbot-open');
+          }
+        });
+      </script> -->
+      <style>
+    /* Chatbot Toggle Button */
+    #chatbot-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #4CAF50;
+      background-image: linear-gradient(45deg, #4CAF50, #00c6ff);
+      color: white;
+      padding: 20px;
+      border-radius: 50%;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      font-size: 24px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #chatbot-toggle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Chatbot Container Styling */
+    #chatbot-container {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      width: 400px;
+      height: 600px;
+      border: 2px solid #e0e0e0;
+      border-radius: 15px;
+      display: none;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: all 0.4s ease;
+      z-index: 1000;
+      background-color: white;
+    }
+
+    #chatbot-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 15px;
+    }
+
+    /* Chatbot Open Class */
+    .chatbot-open {
+      display: block !important;
+      animation: slideIn 0.5s forwards;
+    }
+
+    /* Animation for Smooth Opening */
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+      #chatbot-toggle {
+        bottom: 15px;
+        right: 15px;
+        padding: 15px;
+        font-size: 20px;
+      }
+
+      #chatbot-container {
+        width: 90%;
+        height: 500px;
+        bottom: 70px;
+        right: 5%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Toggle button for the chatbot -->
+  <button id="chatbot-toggle">💬</button>
+
+  <!-- Chatbot iframe container -->
+  <div id="chatbot-container">
+    <iframe
+      src="https://cdn.botpress.cloud/webchat/v2/shareable.html?botId=f6574c9b-7b74-40aa-bd79-b078956ea2fb"
+      title="Botpress Chatbot">
+    </iframe>
+  </div>
+
+  <!-- JavaScript for chatbot toggle -->
+  <script>
+    const chatbotToggle = document.getElementById('chatbot-toggle');
+    const chatbotContainer = document.getElementById('chatbot-container');
+
+    // Toggle chatbot visibility
+    chatbotToggle.addEventListener('click', function() {
+      if (chatbotContainer.classList.contains('chatbot-open')) {
+        chatbotContainer.classList.remove('chatbot-open');
+      } else {
+        chatbotContainer.classList.add('chatbot-open');
+      }
+    });
+  </script>
 </body>
 </html>
